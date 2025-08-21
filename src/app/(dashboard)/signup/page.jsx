@@ -5,7 +5,7 @@ import CreateTitle from "@/app/components/CreateTitle"
 export default function Signup() {
     return (
         <div>
-            <CreateTitle title="Sign up details" color="border-b-green-950"/>
+            <CreateTitle title="Sign up details" tc="text-green-950 font-bold" color="border-b-green-950"/>
             
             <form className="flex flex-col items-center space-y-4 m-auto w-3/4">
                 <InputData type="text" placeholder="Enter your name" />

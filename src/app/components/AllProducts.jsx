@@ -3,7 +3,7 @@ import ProductCard from "./ProductCard"
 
 export default function AllProducts(){
 
-    const productCards = products.map((product) => (
+    const productCards = products.sort(() => Math.random() - 0.5).map((product) => (
         <ProductCard key={product.id} src={product.image.slice(-1)} title={product.name} amount={product.amount}/>
     ))
     

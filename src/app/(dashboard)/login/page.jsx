@@ -6,14 +6,14 @@ import Link from "next/link";
 export default function Login(){
     return (
         <div>
-            <CreateTitle title="Login" color="border-b-blue-950"/>
+            <CreateTitle title="Login" tc="text-red-500 font-black" color="border-b-blue-950"/>
 
             <form className="flex flex-col items-center space-y-4 m-auto w-3/4">
                 <InputData type="email" placeholder="Enter your email"/>
                 <InputData type="password" placeholder="Enter your password"/>
 
                 <FormButton data="login" color="bg-red-500"/>
-                <button><Link href="/forgot-password">Forgot passowrd?</Link></button>
+                <button><Link href="/forgot-password">Forgot password?</Link></button>
             </form>
         </div>
     )
