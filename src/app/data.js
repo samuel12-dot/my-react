@@ -26,7 +26,7 @@ export const products = [
       "Durable leather material"
     ],
     productDetails: "Black ergonomic office chair for comfort and support.",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/151",
     dealer: "FurniMart"
   },
   {
@@ -41,7 +41,7 @@ export const products = [
       "Stylish look"
     ],
     productDetails: "Men’s running shoes perfect for sports and daily wear.",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/152",
     dealer: "StyleHub"
   },
   {
@@ -56,7 +56,7 @@ export const products = [
       "Fast charging"
     ],
     productDetails: "Latest smartphone with advanced features.",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/153",
     dealer: "TechWorld"
   },
   {
@@ -71,7 +71,7 @@ export const products = [
       "Easy to clean"
     ],
     productDetails: "Classic wooden dining table, sturdy and stylish.",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/154",
     dealer: "FurniMart"
   },
   {
@@ -86,7 +86,7 @@ export const products = [
       "Machine washable"
     ],
     productDetails: "Classic blue denim jacket suitable for all seasons.",
-    image: "https://via.placeholder.com/150",
+    image: "https://via.placeholder.com/155",
     dealer: "StyleHub"
   },
   {
