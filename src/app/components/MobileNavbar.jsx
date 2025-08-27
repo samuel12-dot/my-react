@@ -6,7 +6,10 @@ import { useState } from "react";
 
 export default function MobileNavbar() {
 
-    const [showMenu, setShowMenu] = useState(false)
+    const [showNav, setShowNav] = useState(false)
+    function handleMobileNav() {
+        setShowNav(!showNav)
+    }
 
 
     const mobileNavbar = navbar.map((item, index) => (
@@ -15,12 +18,15 @@ export default function MobileNavbar() {
     return (
         <div>
             <ul className="md:hidden flex justify-between text-white bg-slate-950 px-8 py-5 gap-8">
-                <NavbarLink title="Home" link="/" />
+                <li><NavbarLink title="Home" link="/" /></li>
+                <li onClick={handleMobileNav}><RxHamburgerMenu /></li>
             </ul>
 
-            <ul className="md:hidden flex flex-col text-white bg-slate-950 px-8 py-5 gap-4 h-screen">
-                {mobileNavbar}
-            </ul>
+            {showNav &&
+                <ul className="md:hidden flex flex-col text-white bg-slate-950 px-8 py-5 gap-4 h-screen" onClick={handleMobileNav}>
+                    {mobileNavbar}
+                </ul>
+            }
         </div>
     )
 }

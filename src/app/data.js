@@ -302,7 +302,6 @@ const products = [
 ];
 
 
-
 const navbar = [
   {
     name: "Home",
@@ -322,4 +321,56 @@ const navbar = [
   }
 ]
 
-export {products, navbar}
+
+const footerData = [
+      {
+        name: "Home",
+        href: "/"
+      },
+      {
+        name: "Contact",
+        href: "/contact"
+      },
+      {
+        name: "FAQ",
+        href: "/faq"
+      },
+      {
+        name: "Careers",
+        href: "/careers"
+      },
+      {
+        name: "Products",
+        href: "/product"
+      },
+      {
+        name: "Privacy Policy",
+        href: "/privacy-policy"
+      },
+      {
+        name: "Support",
+        href: "/support"
+      },
+      {
+        name: "Sign Up",
+        href: "/signup"
+      },
+      {
+        name: "About",
+        href: "/about"
+      },
+      {
+        name: "Terms of Service",
+        href: "/termsofservice"
+      },
+      {
+        name: "Blog",
+        href: "/blog"
+      },
+      {
+        name: "Login",
+        href: "/login"
+      }
+]
+
+export { products, navbar, footerData }
