@@ -3,6 +3,7 @@ import { navbar } from "../data"
 import { RxHamburgerMenu } from "react-icons/rx";
 import NavbarLink from './NavbarLink'
 import { useState } from "react";
+import CartLink from "./CartLink";
 
 export default function MobileNavbar() {
 
@@ -25,6 +26,7 @@ export default function MobileNavbar() {
             {showNav &&
                 <ul className="md:hidden flex flex-col text-white bg-slate-950 px-8 py-5 gap-4 h-screen" onClick={handleMobileNav}>
                     {mobileNavbar}
+                    <CartLink />
                 </ul>
             }
         </div>

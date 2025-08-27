@@ -3,6 +3,7 @@ import { products } from '@/app/data'
 import Image from 'next/image'
 import { DiAndroid } from "react-icons/di";
 import ProductCard from '@/app/components/ProductCard';
+import AddCart from '@/app/components/AddCart';
 
 
 export default async function ProductDetailsPage({ params }) {
@@ -17,7 +18,7 @@ export default async function ProductDetailsPage({ params }) {
     const relatedProducts = products.filter(product => (product.category === productInfo.category || product.dealer === productInfo.dealer) && product.name !== productInfo.name)
 
     return (
-        <div className='max-w-4xl mx-auto p-4 flex flex-wrap gap-4'>
+        <div className='w-4/5 mx-auto p-4 flex flex-wrap gap-4'>
             <section className='flex flex-col gap-y-5'>
                 <h1 className='bg-slate-950 text-white py-5 px-4 text-4xl'>{productInfo.name}</h1>
                 <p>{productInfo.productDetails}</p>
@@ -45,6 +46,7 @@ export default async function ProductDetailsPage({ params }) {
                 <Image src={`/${src > 5 ? 0 : src}.jpg`} alt={productInfo.image} height={300} width={300} />
                 <figcaption>{productInfo.name}</figcaption>
             </figure>
+            <AddCart />
 
             <section>
                 <h2>Related Products</h2>
