@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { SidebarProviders } from "./providers";
+import Cart from "./components/Cart";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
         <SidebarProviders>
           <Navbar />
           <div className="min-h-screen">
+            <Cart />
             {children}
           </div>
           <Footer />

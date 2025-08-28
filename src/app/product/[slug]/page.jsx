@@ -46,7 +46,7 @@ export default async function ProductDetailsPage({ params }) {
                 <Image src={`/${src > 5 ? 0 : src}.jpg`} alt={productInfo.image} height={300} width={300} />
                 <figcaption>{productInfo.name}</figcaption>
             </figure>
-            <AddCart />
+            <AddCart title={productInfo.name} price={productInfo.amount}/>
 
             <section>
                 <h2>Related Products</h2>

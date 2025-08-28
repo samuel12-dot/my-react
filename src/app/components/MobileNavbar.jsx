@@ -8,6 +8,7 @@ import CartLink from "./CartLink";
 export default function MobileNavbar() {
 
     const [showNav, setShowNav] = useState(false)
+    
     function handleMobileNav() {
         setShowNav(!showNav)
     }

@@ -4,12 +4,13 @@ import { useContext } from "react"
 import { SidebarContext } from "../providers"
 
 
-export default function AddCart() {
+export default function AddCart({title, price}) {
 
-    const { setAddCart } = useContext(SidebarContext)
+    const { setAddCart, addItem, setAddItem } = useContext(SidebarContext)
 
     function handleCartItem() {
         setAddCart(prev => prev + 1)
+        setAddItem([...addItem, {title:title, amount:price}])
     }
 
   return (
