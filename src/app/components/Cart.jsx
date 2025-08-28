@@ -51,6 +51,7 @@ export default function Cart() {
                                 <tfoot>
                                     <tr>
                                         <td>total amount</td>
+                                        <td></td>
                                     </tr>
                                 </tfoot>
                             </table>
